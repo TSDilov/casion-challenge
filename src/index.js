@@ -9,6 +9,8 @@ import { Provider } from 'react-redux'
 import rootReducer from './reducers'
 import rootSaga from './sagas'
 
+import { ThemeProvider } from './utils/themeContext'
+
 const sagaMiddleware = createSagaMiddleware()
 const store = configureStore({
 	reducer: rootReducer,
@@ -17,4 +19,10 @@ const store = configureStore({
 sagaMiddleware.run(rootSaga)
 
 const root = ReactDOM.createRoot(document.getElementById('casino_root'))
-root.render(<Provider store={store}><App /></Provider>)
+root.render(
+	<Provider store={store}>
+	  <ThemeProvider>
+		<App />
+	  </ThemeProvider>с
+	</Provider>
+  )

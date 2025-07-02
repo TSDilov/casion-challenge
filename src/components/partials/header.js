@@ -99,8 +99,8 @@ function Header(props){
                     case "sign":
                         return <div id="header_sign" className="header">
                             <img id="logo_icon" alt="logo_icon" src={logo_icon} />
-                            <h1>{title}</h1>
-                            <h3>{translate({lang: lang, info: "subtitle"})}</h3>
+                            <h1 className="logo_title">{title}</h1>
+                            <h3 className="logo_subtitle">{translate({lang: lang, info: "subtitle"})}</h3>
                         </div>
                     default:
                         if(template === "donation"){

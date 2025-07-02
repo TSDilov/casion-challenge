@@ -4237,3 +4237,101 @@ textarea {
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
 }
+
+/* DARK THEME */
+.theme-dark {
+  background-color: #002b16;
+  color: #ffd700;
+}
+
+.theme-dark .sign_box {
+  border: 2px solid #ffd700;
+  background-color: #002b16;
+}
+
+.theme-dark .sign_in_container input,
+.theme-dark .sign_in_container button {
+  background-color: #003d1f;
+  color: #ffd700;
+}
+
+.theme-dark .checkbox_radio_container,
+.theme-dark .checkbox_radio_container h6,
+.theme-dark .checkbox_radio_container span {
+  color: #ffd700;
+}
+
+.theme-dark .sign_extra_info p {
+  color: #ffd700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* LIGHT THEME */
+.theme-light {
+  background-color: #d7f5dc;
+  color: #111;
+}
+
+.theme-light .sign_box {
+  border: 2px solid #444;
+  background-color: #e3fae8;
+}
+
+.theme-light .sign_in_container input,
+.theme-light .sign_in_container button {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.theme-light .checkbox_radio_container h6,
+.theme-light .checkbox_radio_container span {
+  color: #ffd700;
+}
+
+.theme-light .checkbox_radio_container input {
+  border: 1px solid #ffd700;
+}
+
+.theme-light .header .logo_title,
+.theme-light .header .logo_subtitle,
+.theme-light .logo_title,
+.theme-light .logo_subtitle {
+  color: #ffd700 !important;
+}
+
+.theme-light .sign_extra_info p {
+  color: #ffd700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.theme-light .sign_footer h6 {
+  color: #ffd700;
+}
+
+.change-theme-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 10px 18px;
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sign_box input::placeholder {
+  opacity: 0.6;
+}
+
+.theme-dark .sign_box,
+.theme-light .sign_box,
+.theme-dark .sign_in_container input,
+.theme-light .sign_in_container input {
+  transition: all 0.3s ease;
+}
